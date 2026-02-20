@@ -15,6 +15,15 @@ int prvek(int prvni, int druhy, int n) {
 	return prvek;
 }
 
-int soucet() {
+int soucet(int prvni, int druhy, int n) {
+	int soucet = prvni;
+	int predchozi = prvni;
 
+	for (int i = 1; i < n; i++) {
+		int prvek = predchozi * (druhy / prvni);
+		predchozi = prvek;
+		soucet += prvek;
+	}
+
+	return soucet;
 }

@@ -14,4 +14,6 @@ int main()
 
     cout << "takze prvecek je: " << prvek(prvni, druhy, n) << endl;
 
+	cout << "a soucet prvnich n prvku je: " << soucet(prvni, druhy, n) << endl;
+	return 0;
 }
